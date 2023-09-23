@@ -1,12 +1,17 @@
 package org.example;
 
+import java.util.Scanner;
+
 /**
  * Remember Lambda before delta!!!
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+
+    //Create custom exception***
+    public static void main( String[] args ) throws InsufficientChangeException {
+
+        Scanner scanner = new Scanner(System.in);
         AtomicModelCoffeeMachine singleton = AtomicModelSingleton.INSTANCE.getInstance();
 
         System.out.println( "Welcome to the Coffee Atomic Model" );
@@ -15,6 +20,15 @@ public class App
         System.out.println("You will also get output from the following set: ");
         System.out.println( singleton.potentialOutputs);
         System.out.println( "You are now entering the model: (remember lambda before delta ;) )");
+
+
+        while(true) {
+            System.out.println("Please enter more input");
+            String input = scanner.nextLine();
+            singleton.lambda();
+            singleton.delta(input);
+            System.out.println();
+        }
 
 
 

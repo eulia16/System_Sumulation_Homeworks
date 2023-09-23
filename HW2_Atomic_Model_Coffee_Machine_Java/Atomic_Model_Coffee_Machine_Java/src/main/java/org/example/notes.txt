@@ -1,0 +1,2 @@
+if there is only 1 quarter in the machine(for example), then only 1 quarter can be sent out, so we must limit the
+output for loops to also take into account the case where there is only a specific amt of  quarters and

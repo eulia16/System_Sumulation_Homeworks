@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e320896c-ddb1-4fe6-83ff-4cadef1286e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/System_Sumulation_Homeworks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/src/main/java/org/example/AtomicModelCoffeeMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/src/main/java/org/example/AtomicModelSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW2_Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
