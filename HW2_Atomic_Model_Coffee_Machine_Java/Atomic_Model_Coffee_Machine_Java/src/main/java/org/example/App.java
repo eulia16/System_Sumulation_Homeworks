@@ -25,6 +25,10 @@ public class App
         while(true) {
             System.out.println("Please enter more input");
             String input = scanner.nextLine();
+
+            if(input.equalsIgnoreCase("exit"))
+                System.exit(0);
+
             singleton.lambda();
             singleton.delta(input);
             System.out.println();
