@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java.iml" filepath="$PROJECT_DIR$/Atomic_Model_Coffee_Machine_Java/Atomic_Model_Coffee_Machine_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HW2_Atomic_Model_Coffee_Machine_Java.iml" filepath="$PROJECT_DIR$/.idea/HW2_Atomic_Model_Coffee_Machine_Java.iml" />
+    </modules>
+  </component>
+</project>

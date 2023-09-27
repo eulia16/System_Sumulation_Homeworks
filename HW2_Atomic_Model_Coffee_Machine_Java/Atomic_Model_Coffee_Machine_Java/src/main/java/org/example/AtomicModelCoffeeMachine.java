@@ -3,8 +3,6 @@ package org.example;
 import java.util.*;
 
 public class AtomicModelCoffeeMachine {
-    public static final Set<String> potentialInputs = new HashSet<>();
-    public static final Set<String> potentialOutputs = new HashSet<>();
     private int numQuarters = 0;
     private int numDimes = 0;
     private int numNickels = 0;
@@ -16,22 +14,11 @@ public class AtomicModelCoffeeMachine {
     private final static int DIME_VALUE = 10;
     private final static int NICKEL_VALUE = 5;
 
-
-
-
-
     public AtomicModelCoffeeMachine(){
-        potentialInputs.addAll(List.of(new String[]{"Quarter", "Dime", "Nickel", "Cancel", "Wait"}));
-        potentialOutputs.addAll(List.of(new String[]{"Quarter", "Dime", "Nickel", "Coffee", "Nothing"}));
         //we were told the base state would be q=10, d=10, n=10, v=0, c=false
         numQuarters = 10;
         numDimes = 10;
         numNickels = 10;
-        //for testing purposes for lamdba we'll set the value to some random value
-        //Testing values ****
-        //this.value = 0;
-        //getChange = true;
-
     }
 
 
@@ -40,30 +27,23 @@ public class AtomicModelCoffeeMachine {
     //Lambda = (Xn1, Sn)->Sn+1
     public void lambda() throws InsufficientChangeException {
         //we will perform a set of actions based on the previous input
-        int coffees = getNumCoffees();
-        List<Character> change = getChange();
-        System.out.println("numCoffees: " + coffees);
-        System.out.println("value: " + this.value);
-
-
         if(this.value > 99){
+            int coffees = getNumCoffees();
             System.out.println("You received " + coffees + " in coffees");
         }
         if (this.getChange) {
+            List<Character> change = getChange();
             System.out.println("You received " + change + " in change");
         }
-        else{
+        if(!this.getChange && this.value <100){
             System.out.println("Nothing Outputted");
         }
-
-
     }
 
     //these functions(getChange and getNumCoffees will be non-destructive regarding the state of the model)
     private List<Character> getChange() throws InsufficientChangeException {
         int modulusOfValue = this.value % COFFEE_VALUE;
         List<Character> returnValues = new ArrayList<>();
-        System.out.println("Inside getChange method");
         if(modulusOfValue == 0) {
             return returnValues;//if there is no change to output, return the empty list
         }
@@ -81,8 +61,6 @@ public class AtomicModelCoffeeMachine {
             if(this.numQuarters !=0 ) {
                 returnValues = getNumQuarters(returnValues, numLoopsToAddRespectiveCoins);
                 modulusOfValue -= (numLoopsToAddRespectiveCoins * QUARTER_VALUE);
-                System.out.println("return values from function: " + returnValues);
-                System.out.println("current value of remaining change to be given" + modulusOfValue);
                 if (modulusOfValue == 0)
                     return returnValues;
             }
@@ -97,8 +75,6 @@ public class AtomicModelCoffeeMachine {
             if(this.numDimes != 0) {
                 returnValues = getNumDimes(returnValues, numLoopsToAddRespectiveCoins);
                 modulusOfValue -= (numLoopsToAddRespectiveCoins * DIME_VALUE);
-                System.out.println("return values from function: " + returnValues);
-                System.out.println("current value of remaining change to be given" + modulusOfValue);
                 if (modulusOfValue == 0)
                     return returnValues;
             }
@@ -113,8 +89,6 @@ public class AtomicModelCoffeeMachine {
             if(this.numNickels !=0) {
                 returnValues = getNumNickels(returnValues, numLoopsToAddRespectiveCoins);
                 modulusOfValue -= (numLoopsToAddRespectiveCoins * NICKEL_VALUE);
-                System.out.println("return values from function: " + returnValues);
-                System.out.println("current value of remaining change to be given" + modulusOfValue);
                 if (modulusOfValue == 0)
                     return returnValues;
             }
@@ -130,30 +104,34 @@ public class AtomicModelCoffeeMachine {
     }
 
 
+    void printInternals(){
+        System.out.println("Current value: " + this.value);
+        System.out.println("Current numQuarters: " + this.numQuarters);
+        System.out.println("Current numDimes: " + this.numDimes);
+        System.out.println("Current numNickels: " + this.numNickels);
+        System.out.println("Current value of getChange: " + this.getChange);
+
+    }
+
     //getChangeSubMethods
-      List<Character> getNumQuarters(List<Character> ret, int numLoops){
+    private List<Character> getNumQuarters(List<Character> ret, int numLoops){
         for(int i=0; i< numLoops; ++i){
             ret.add('q');
         }
         return ret;
     }
-    List<Character> getNumDimes(List<Character> ret, int numLoops){
+    private List<Character> getNumDimes(List<Character> ret, int numLoops){
         for(int i=0; i< numLoops; ++i){
             ret.add('d');
         }
         return ret;
-
     }
-    List<Character> getNumNickels(List<Character> ret, int numLoops){
-
+    private List<Character> getNumNickels(List<Character> ret, int numLoops){
         for(int i=0; i< numLoops; ++i){
             ret.add('n');
         }
         return ret;
-
     }
-
-
 
     private int getNumCoffees() {
         return this.value/COFFEE_VALUE;
@@ -168,8 +146,6 @@ public class AtomicModelCoffeeMachine {
 
         //if the value was above 100, a coffee will be dispensed, so our value field must be below 100 after
         this.value = this.value % 100;
-        System.out.println("value: " + this.value);
-
 
         //if the getChange field was true, decrement the proper fields
         if(this.getChange){
@@ -184,6 +160,7 @@ public class AtomicModelCoffeeMachine {
 
             for(int i =0; i< numLoopsToPerform; ++i){
                 numQuarters--;
+                this.value -= QUARTER_VALUE;
             }
 
             int numDimeValue = this.value / DIME_VALUE;
@@ -195,6 +172,7 @@ public class AtomicModelCoffeeMachine {
 
             for(int i =0; i< numLoopsToPerform; ++i){
                 numDimes--;
+                this.value -= DIME_VALUE;
             }
 
             int numNickelValue = this.value / NICKEL_VALUE;
@@ -204,10 +182,11 @@ public class AtomicModelCoffeeMachine {
             else
                 numLoopsToPerform = numNickelValue;
 
-
             for(int i =0; i< numLoopsToPerform; ++i){
                 numNickels--;
+                this.value -= NICKEL_VALUE;
             }
+
         }
 
         //after dealing with the change, reset the state to false to ensure no stale states
@@ -217,9 +196,7 @@ public class AtomicModelCoffeeMachine {
 
         for(char c : tokens){
             if(c == 'q') {
-                System.out.println("numQuarters before: " + numQuarters);
                 numQuarters++;
-                System.out.println("numQuarters after: " + numQuarters);
                 value += QUARTER_VALUE;
             }
             if(c == 'd') {
@@ -236,10 +213,5 @@ public class AtomicModelCoffeeMachine {
                 this.getChange = true;
         }
 
-
-
-
     }
-
-
 }
