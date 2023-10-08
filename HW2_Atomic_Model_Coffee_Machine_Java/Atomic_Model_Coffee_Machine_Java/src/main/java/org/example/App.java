@@ -12,6 +12,8 @@ public class App
         Scanner scanner = new Scanner(System.in);
         AtomicModelCoffeeMachine singleton = new AtomicModelCoffeeMachine();
 
+
+
         System.out.println( "Welcome to the Coffee Atomic Model" );
         System.out.println( "You will have the option of entering input from the set: " );
         System.out.println( "{\"q\", \"d\", \"n\", \"c\", \"w\"}");
