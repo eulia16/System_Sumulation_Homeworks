@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1165d81-efb3-408b-8e18-657b904a4204" name="Changes" comment="" />
+    <list default="true" id="e1165d81-efb3-408b-8e18-657b904a4204" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../HW_3/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/MemoryModel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/MemoryModel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/NetworkModel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/NetworkModel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/XORModel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/XORModel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/reply/cache-v2-62f69ffed6754e1c2605.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6b4dad25a4f53cbac6ea.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-d0502afa689c6663d341.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_3/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3_NetworkModelMaven" beforeDir="false" afterPath="$PROJECT_DIR$/HW3_NetworkModelMaven" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3_NetworkModelMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HW3_NetworkModelMaven/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3_NetworkModelMaven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HW3_NetworkModelMaven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3_NetworkModelMaven/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW3_NetworkModelMaven/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3_NetworkModelMaven/src/main/java/org/example/MemoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW3_NetworkModelMaven/src/main/java/org/example/MemoryModel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/HW3_NetworkModelMaven" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HW3_NetworkModelMaven/src/main/java/org/example/App.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2WJ1girhmRTSXDH6RMLaIA96RG7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,14 +66,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ethan/Desktop/System_Sumulation_Homeworks/HW3_NetworkModel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ethan/Desktop/System_Sumulation_Homeworks/HW3_NetworkModel&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="HW3_NetworkModel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,6 +96,11 @@
       <option name="presentableId" value="Default" />
       <updated>1696435983124</updated>
       <workItem from="1696435984741" duration="69000" />
+      <workItem from="1696970242707" duration="1536000" />
+      <workItem from="1696971867190" duration="308000" />
+      <workItem from="1696972226826" duration="377000" />
+      <workItem from="1697401243835" duration="934000" />
+      <workItem from="1698186546023" duration="793000" />
     </task>
     <servers />
   </component>
