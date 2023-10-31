@@ -20,7 +20,7 @@ int main() {
         if(input == "exit")
             exit(0);
 
-        cout << "Network Tick: " + networkTick << endl;
+        cout << "Network Tick: " << networkTick << endl;
         //if we want to have one network tick present as expected
         for(int i=0; i<3; ++i){
 
